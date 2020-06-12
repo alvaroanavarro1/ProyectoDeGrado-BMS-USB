@@ -1,0 +1,95 @@
+% ************************************************************************************************
+% **************** Template para la elaboración del libro de Proyecto de Grado,*******************
+% ******************** siguiendo los lineamientos establecidos por el ****************************
+% ************* Decanato de Estudios Profesionales de la Universidad Simón Bolívar ***************
+% *** "Normas para Redacción y Presentación del Libro Final del Proyecto de Grado y Pasantías" ***
+% ***************** en la pág. web http://www.profesionales.usb.ve/es/node/4 *********************
+% ************************************************************************************************
+
+% ************************************************************************************************
+% *** Versión: v1.0                                                                            ***
+% *** Autor: Luis Pérez Bustos                                                                 ***
+% *** Estudiante de Ingeniería Electrónica                                                     ***
+% *** Fecha: 08/04/2017                                                                        ***                      
+% *** Licencia: MIT License (c) 2017 Luis Perez Bustos                                         ***
+% *** GitHub: https://github.com/lperezbustos/ProyectoDeGrado-Template-USB                     ***
+% ************************************************************************************************
+
+\documentclass[letterpaper,12pt,oneside,times,numbered,print,custommargin]{Clases/USB}
+
+% El archivo README.md muestra información necesaria, por favor leerlo.
+
+\input{0_Preambulo/preambulo} % Preámbulo: configuraciones y paquetes necesarios
+
+% *******************************************************************************
+% ******************************** Front Matter *********************************
+% *******************************************************************************
+\begin{document}
+
+\include{1_FrontMatter/caratula}
+\include{1_FrontMatter/pagina_titulo}
+\include{1_FrontMatter/acta_evaluacion_USB}
+
+\frontmatter
+\pagestyle{fan2}    % pagestyle in frontmatter
+\include{1_FrontMatter/resumen}         % a very organized abstract is important
+\include{1_FrontMatter/dedicatoria}     % just a couple of phrases
+\include{1_FrontMatter/agradecimientos} % remember the people that helped you
+
+
+\tableofcontents    % índice general
+\newpage
+\listoftables       % índice de tablas
+\newpage
+\listoffigures      % índice de figuras
+\newpage
+
+\printnomenclature[2.5cm] % lista de abreviaturas y nomenclatura (ver preambulo.tex)
+
+% *******************************************************************************
+% ******************************** Main Matter **********************************
+% *******************************************************************************
+
+% ********************************** Introducción *******************************
+\mainmatter
+\pagestyle{fan} % pagestyle in mainmatter
+\include{2_MainMatter/Introduccion/introduccion}
+
+% ****************************** Cuerpo del Trabajo *****************************
+\include{2_MainMatter/Capitulo1/cap1}
+\include{2_MainMatter/Capitulo2/cap2}
+\include{2_MainMatter/Capitulo3/cap3}
+\include{2_MainMatter/Capitulo4/cap4}
+% .
+% .
+% .
+% \include{2_MainMatter/CapituloN/capN}
+
+% ********************************** Conclusiones *******************************
+\include{2_MainMatter/conclusiones}
+
+% *******************************************************************************
+% ********************************** Back Matter ********************************
+% *******************************************************************************
+
+% ********************************** Referencias ********************************
+
+\begin{spacing}{1}          % espaciado reglamentario
+\printbibliography[heading=bibintoc, title=REFERENCIAS]
+\end{spacing}
+
+% ********************************** Apéndices ********************************
+\appendix
+\include{3_BackMatter/Apendices/apendiceA}
+\include{3_BackMatter/Apendices/apendiceB}
+\include{3_BackMatter/Apendices/apendiceC}
+% .
+% .
+% .
+% \include{3_BackMatter/Apendices/apendiceN}
+
+% *******************************************************************************
+% *************************************** END ***********************************
+% *******************************************************************************
+
+\end{document}
