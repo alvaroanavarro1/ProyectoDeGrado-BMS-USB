@@ -30,49 +30,49 @@ Un sistema de control está constituido por una cantidad de dispositivos mecáni
 \subsection{Elementos de Campo}
 \begin{itemize}
 \item \textbf{Sensores:}
-Es un objeto de capaz de detectar variables de instrumentación (magnitudes físicas o químicas), y a su vez transformarlas en variables eléctricas. A la hora de escoger cuál tipo de sensor utilizar se deben tener en cuenta las siguientes características:
+es un objeto de capaz de detectar variables de instrumentación (magnitudes físicas o químicas), y a su vez transformarlas en variables eléctricas. A la hora de escoger cuál tipo de sensor utilizar se deben tener en cuenta las siguientes características:
 \begin{itemize}
 \item{Rango de medida:}
-Dominio en el cual puede aplicarse el sensor.
+dominio en el cual puede aplicarse el sensor.
 \item{Sensibilidad:}
-Mínima variación captada por el sensor.
+mínima variación captada por el sensor.
 \item{Precisión:}
-Rango de error que puede ser presentado por el sensor.
+rango de error que puede ser presentado por el sensor.
 \end{itemize}
 \item \textbf{Actuadores:}
-Son los dispositivos encargados de generar un efecto sobre un proceso con el fin de automatizarlo. Normalmente estos reciben una señal de un regulador o controlador, con lo cual generan una salida proporcional a la misma en el elemento final de control. Los actuadores se caracterizan por influir directamente en el proceso final de la automatización, esto con el fin de modificar la salida del proceso según las instrucciones obtenidas por la unidad de control. Para contemplar qué tipo de actuador es necesario seguir las mismas características contempladas para la escogencia de sensores.
+son los dispositivos encargados de generar un efecto sobre un proceso con el fin de automatizarlo. Normalmente estos reciben una señal de un regulador o controlador, con lo cual generan una salida proporcional a la misma en el elemento final de control. Los actuadores se caracterizan por influir directamente en el proceso final de la automatización, esto con el fin de modificar la salida del proceso según las instrucciones obtenidas por la unidad de control. Para contemplar qué tipo de actuador es necesario seguir las mismas características contempladas para la escogencia de sensores.
 \end{itemize}
 \subsection{Elementos de Control}
 \begin{itemize}
 \item \textbf{Controlador Programable:}
-Un controlador lógico programable, mejor conocido como PLC, es un dispositivo capaz de automatizar procesos electromecánicos, tales como el control de maquinarias, por ejemplo bombas de agua centrifugadas o control secuencial de relés. 
+un controlador lógico programable, mejor conocido como PLC, es un dispositivo capaz de automatizar procesos electromecánicos, tales como el control de maquinarias, por ejemplo bombas de agua centrifugadas o control secuencial de relés. 
 
 Un PLC se compone de una unidad de procesamiento central CPU e interfaces de entrada y salida, estas pueden ser de tipo analogicas o binarias. El procesador se encarga de ejecutar el programa escrito por el usuario, donde es posible la interacción de este con el exterior mediante sus puertos de comunicación. Mediante su interfaz de entrada es capaz de adaptar las señales provenientes de los elementos de entrada para que el CPU pueda interpretar dicha información. Además la interpretación de estas señales de entrada permiten una respuesta deseada por el usuario a través de las interfaces de salida que se encargan de activar algún elemento de campo. 
 
 \item \textbf{Controlador Parametrizable:}
-Un Controlador parametrizable se diferencia de un PLC, debido a que este no es libremente programable. Es decir, que se incluyen una programación previa sobre un problema en concreto; con la capacidad de ajustar ciertos parámetros sobre dicho problema. Un ejemplo sobre un controlador parametrizable es el de un controlador de
+un Controlador parametrizable se diferencia de un PLC, debido a que este no es libremente programable. Es decir, que se incluyen una programación previa sobre un problema en concreto; con la capacidad de ajustar ciertos parámetros sobre dicho problema. Un ejemplo sobre un controlador parametrizable es el de un controlador de
 fancoil, el fabricante nos permitirá parametrizar las características básicas del fancoil para ajustar el controlador al sistema presente: 2 o 4 tubos, consignas, modos de funcionamiento, horarios, etc.
 
 \item \textbf{Integraciones:}
-Gracias a la existencia de un bus de comunicación, los distintos tipos de controladores tienen la capacidad de conectarse entre ellos, o con dispositivos de terceros. Mediante un mismo protocolo de comunicación, se puede compartir funciones, lógicas o parámetros entre los diferentes dispositivos conectados.
+gracias a la existencia de un bus de comunicación, los distintos tipos de controladores tienen la capacidad de conectarse entre ellos, o con dispositivos de terceros. Mediante un mismo protocolo de comunicación, se puede compartir funciones, lógicas o parámetros entre los diferentes dispositivos conectados.
 
 \end{itemize}
 
 \subsection{Elementos de Gestión}
 \begin{itemize}
 \item \textbf{Software de Gestión:}
-El sofware de gestión se encuentra por lo general en un PC o Servidor, con el cual se puede ejercer un control sobre la red BMS. Normalmente este software se dedica a la adquisición de datos obtenidos por los elementos de control.
+el sofware de gestión se encuentra por lo general en un PC o Servidor, con el cual se puede ejercer un control sobre la red BMS. Normalmente este software se dedica a la adquisición de datos obtenidos por los elementos de control.
 \item \textbf{Web server:}
-Un web server es la integración de la red BMS a una red con direcciones IP. Mediante su configuración correcta, esta ofrece la oportunidad de conectarse localmente o de forma remota al sistema BMS.
+un web server es la integración de la red BMS a una red con direcciones IP. Mediante su configuración correcta, esta ofrece la oportunidad de conectarse localmente o de forma remota al sistema BMS.
 \item \textbf{Software Gráfico:}
-Este se encarga de brindar al usuario la capacidad de visualizar el sistema mediante paneles o gráficos. Por lo general se puede incluir pantallas o paneles realizados mediante este software gráfico al web server, para la visualización de usuarios no operarios.
+este se encarga de brindar al usuario la capacidad de visualizar el sistema mediante paneles o gráficos. Por lo general se puede incluir pantallas o paneles realizados mediante este software gráfico al web server, para la visualización de usuarios no operarios.
 \end{itemize}
 \subsection{Elementos de Usuarios}
 \begin{itemize}
 \item \textbf{PC de usuario:}
 PC convencional capaz de acceder mediante un navegador web al web server para supervisión y control del sistema BMS de una manera cómoda y sencilla. Mediante una correcta configuración se puede adaptar esta para diferentes tipos de usuarios, según las funciones que desempeñe y sus conocimientos.
 \item \textbf{Dispositivos móviles:}
-Teléfonos celulares o tablets, que mediante su navegador en el caso que dispongan o APP's pueden realizar el acceso al web server y tener visualización del sistema.
+teléfonos celulares o tablets, que mediante su navegador en el caso que dispongan o APP's pueden realizar el acceso al web server y tener visualización del sistema.
 
 \end{itemize}
 
@@ -108,3 +108,4 @@ El bus N2 utiliza un protocolo maestro/esclavo, en el cual es dispositivo maestr
     \caption{Ejemplo de un bus de comunicaciones N2\cite{N2}}
     \label{fig:N2}
 \end{figure}
+
